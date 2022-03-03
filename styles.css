@@ -1,0 +1,162 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  
+  margin: 0;
+  background-color: black;
+  
+}
+hr{
+  width: 20em;
+}
+.button1{
+  padding: 0.35em 1.2em;
+  border:0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  text-align:center;
+  transition: all 0.2s;
+}
+.button1:hover{
+color:#000000;
+  background-color:#FFFFFF;
+  }
+  @media all and (max-width:30em){
+    a.button1{
+    display:block;
+    margin:0.4em auto;
+    }
+    } 
+.name{
+  margin-right: 5em;
+  display: inline-block;
+  color: white;
+  font-size: xx-large;
+}
+.carousel {
+  margin-top: 1em;
+  left: 19em;
+  width: 79vw;
+  height: 100vh;
+  position: relative;
+}
+
+li > .background{
+  /* overflow: none; */
+  z-index: -1;
+  position: absolute;
+  object-fit: cover;
+  height:600px; 
+  width:1000px;
+}
+li > .normal{
+  /* overflow: none; */
+  height:600px; 
+  width:1000px;
+}
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+  padding-right: 0;
+}
+
+
+.slide > img {
+  display: inline;
+  width: 80%;
+  height: 80%;
+  /* object-fit: cover; */
+  /* object-position: center; */
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, .5);
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  left: 57rem;
+}
+.capsule{
+  width: 20em;
+}
+.section2{
+  /* width: 50em; */
+  display: flex;
+}
+
+section > .code-img{
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 9.5px );
+  -webkit-backdrop-filter: blur( 9.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 0.25rem;
+  margin-left: 5em;
+  margin-bottom: 10em;
+}
+h2{
+  width: 25em;
+  height: 2em;
+  margin: 15%;
+  margin-bottom: 0%;
+  margin-right: 0%;
+  margin-top: 5%;
+  /* width: 10em; */
+  color:white;
+}
+p{
+  right: 11rem;
+  margin-top: 0;
+  top: 10rem;
+  position: relative;
+  height: 10em;
+  color: white;
+}
